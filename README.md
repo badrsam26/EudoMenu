@@ -15,7 +15,8 @@ En revanche, il est important de noter que l'utilisation cette architecture peut
 
 ### 2 - Lister les différentes couches de l’application
 
-* Application Core: Domain services, Abstraction, Interfaces, Business logic ...
+* Domain
+* Application
 * Infrastructure: Persistence
 * UI
 
@@ -24,3 +25,29 @@ En revanche, il est important de noter que l'utilisation cette architecture peut
 
 ### 4 - Le schéma de flux entre les couches pour les fonctionnalités
 ![Le schéma de flux entre les couches pour les fonctionnalités](https://i.ibb.co/4t0B3Ht/flux.png)
+
+### 5 - SPECIFICATIONS DES DEVELOPPEMENTS
+
+Pour entamer les développements suivants une bonne conprehension de la Clean Architecture, MediatR et le pattern CQRS, est indispensable. Je vous recommande de consulter cet article : https://binodmahto.medium.com/clean-code-architecture-with-mediator-cqrs-pattern-in-net-core-7cec4ee51fc3
+
+#### 1)Voici les étapes à suivre pour ajouter un nouveau restaurant en respectant cette architecture :
+
+Dans la couche "Application", précisément dans le projet "Application", naviguez vers le dossier qui regroupe toutes les fonctionnalités liées aux restaurants. Ajoutez un nouveau dossier dans la partie "Commands" pour la nouvelle fonctionnalité : "CreateRestaurant".
+
+1)Commencez par la création du ViewModel pour représenter les données du restaurant.
+
+2)Créez la commande de création qui sera utilisée par le (handler).
+
+3)N'oubliez pas de définir les règles de validation de la commande à l'aide de FluentValidation.
+
+4)Créez le (handler) qui se chargera de l'exécution de la commande en utilisant le (repository) qui gère les restaurants.
+
+5)Définissez le mapping entre "Restaurant" et le ViewModel dans les profiles.
+
+6)Dans le projet "API", dans le contrôleur "RestaurantController", ajoutez la méthode POST qui permettra l'envoi de la commande à l'aide de MediatR pour ajouter un restaurant.
+
+7)N'oubliez pas de réaliser des tests unitaires pour vérifier le bon fonctionnement de la méthode que vous avez créée.
+
+Il est important de noter que, dans le lexique utilisé, on parle de requête (query) lorsqu'il s'agit de récupération de données, et de commande (command) lorsqu'il s'agit de création, modification ou suppression de données.
+
+Assurez-vous de suivre ces étapes en comprenant les concepts de la Clean Architecture, de MediatR et du pattern CQRS pour développer de manière cohérente et maintenable.
