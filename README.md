@@ -30,7 +30,7 @@ En revanche, il est important de noter que l'utilisation cette architecture peut
 
 Pour entamer les développements suivants une bonne conprehension de la Clean Architecture, MediatR et le pattern CQRS, est indispensable. Je vous recommande de consulter cet article : https://binodmahto.medium.com/clean-code-architecture-with-mediator-cqrs-pattern-in-net-core-7cec4ee51fc3
 
-#### 1)Voici les étapes à suivre pour ajouter un nouveau restaurant en respectant cette architecture :
+#### 1) ajouter un nouveau restaurant :
 
 Dans la couche "Application", précisément dans le projet "Application", naviguez vers le dossier qui regroupe toutes les fonctionnalités liées aux restaurants. Ajoutez un nouveau dossier dans la partie "Commands" pour la nouvelle fonctionnalité : "CreateRestaurant".
 
@@ -47,6 +47,26 @@ Dans la couche "Application", précisément dans le projet "Application", navigu
 6)Dans le projet "API", dans le contrôleur "RestaurantController", ajoutez la méthode POST qui permettra l'envoi de la commande à l'aide de MediatR pour ajouter un restaurant.
 
 7)N'oubliez pas de réaliser des tests unitaires pour vérifier le bon fonctionnement de la méthode que vous avez créée.
+
+#### 2)Afficher une vue détaillée d’un plat 
+
+Pour afficher une vue détaillée d'un plat, suivez les étapes suivantes en respectant l'architecture de la Clean Architecture :
+
+Dans la couche "Application", dans le dossier qui regroupe toutes les fonctionnalités liées aux plats, ajoutez un nouveau dossier dans la partie "Queries" pour la nouvelle fonctionnalité : "GetPlatDetail".
+
+1)Commencez par créer le ViewModel qui contiendra les informations nécessaires pour la vue détaillée du plat.
+
+2)Créez la Query de récupération avec l'identifiant du plat comme paramètre.
+
+3)Implémentez le (Handler) qui exécutera la Query en utilisant le (repository) des plats.
+
+4)Définissez le mapping (Meal<=>ViewModel) dans les profiles.
+
+5)Dans le contrôleur "MealsController" de l'API, ajoutez la méthode GET qui enverra la Query à l'aide de MediatR et retournera le plat demandé.
+
+6)N'oubliez pas de réaliser des tests unitaires pour vérifier le bon fonctionnement de la méthode que vous avez créée.
+
+Il est également important de toujours documenter vos développements, en fournissant des commentaires clairs, des explications sur les fonctionnalités, ainsi que des exemples d'utilisation lorsque cela est pertinent.
 
 Il est important de noter que, dans le lexique utilisé, on parle de requête (query) lorsqu'il s'agit de récupération de données, et de commande (command) lorsqu'il s'agit de création, modification ou suppression de données.
 
