@@ -73,4 +73,4 @@ Il est important de noter que, dans le lexique utilisé, on parle de requête (q
 Assurez-vous de suivre ces étapes en comprenant les concepts de la Clean Architecture, de MediatR et du pattern CQRS pour développer de manière cohérente et maintenable.
 
 ## RENDU DES DEVS SUR SWAGGER
-![rendu](https://ibb.co/KzQWxt1)
+![rendu](https://i.ibb.co/93fWHxM/screenshot.png)
