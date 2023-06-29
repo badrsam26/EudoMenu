@@ -71,3 +71,6 @@ Il est également important de toujours documenter vos développements, en fourn
 Il est important de noter que, dans le lexique utilisé, on parle de requête (query) lorsqu'il s'agit de récupération de données, et de commande (command) lorsqu'il s'agit de création, modification ou suppression de données.
 
 Assurez-vous de suivre ces étapes en comprenant les concepts de la Clean Architecture, de MediatR et du pattern CQRS pour développer de manière cohérente et maintenable.
+
+## RENDU DES DEVS SUR SWAGGER
+![rendu](https://i.ibb.co/93fWHxM/screenshot.png)

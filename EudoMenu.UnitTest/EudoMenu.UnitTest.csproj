@@ -19,6 +19,7 @@
   </ItemGroup>
 
   <ItemGroup>
+    <ProjectReference Include="..\EudoMenu.Api\EudoMenu.Api.csproj" />
     <ProjectReference Include="..\EudoMenu.Application\EudoMenu.Application.csproj" />
   </ItemGroup>
 
