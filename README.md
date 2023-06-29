@@ -34,19 +34,19 @@ Pour entamer les développements suivants une bonne conprehension de la Clean Ar
 
 Dans la couche "Application", précisément dans le projet "Application", naviguez vers le dossier qui regroupe toutes les fonctionnalités liées aux restaurants. Ajoutez un nouveau dossier dans la partie "Commands" pour la nouvelle fonctionnalité : "CreateRestaurant".
 
-1)Commencez par la création du ViewModel pour représenter les données du restaurant.
+* Commencez par la création du ViewModel pour représenter les données du restaurant.
 
-2)Créez la commande de création qui sera utilisée par le (handler).
+* Créez la commande de création qui sera utilisée par le (handler).
 
-3)N'oubliez pas de définir les règles de validation de la commande à l'aide de FluentValidation.
+* N'oubliez pas de définir les règles de validation de la commande à l'aide de FluentValidation.
 
-4)Créez le (handler) qui se chargera de l'exécution de la commande en utilisant le (repository) qui gère les restaurants.
+* Créez le (handler) qui se chargera de l'exécution de la commande en utilisant le (repository) qui gère les restaurants.
 
-5)Définissez le mapping entre "Restaurant" et le ViewModel dans les profiles.
+* Définissez le mapping entre "Restaurant" et le ViewModel dans les profiles.
 
-6)Dans le projet "API", dans le contrôleur "RestaurantController", ajoutez la méthode POST qui permettra l'envoi de la commande à l'aide de MediatR pour ajouter un restaurant.
+* Dans le projet "API", dans le contrôleur "RestaurantController", ajoutez la méthode POST qui permettra l'envoi de la commande à l'aide de MediatR pour ajouter un restaurant.
 
-7)N'oubliez pas de réaliser des tests unitaires pour vérifier le bon fonctionnement de la méthode que vous avez créée.
+* N'oubliez pas de réaliser des tests unitaires pour vérifier le bon fonctionnement de la méthode que vous avez créée.
 
 #### 2)Afficher une vue détaillée d’un plat 
 
@@ -54,17 +54,17 @@ Pour afficher une vue détaillée d'un plat, suivez les étapes suivantes en res
 
 Dans la couche "Application", dans le dossier qui regroupe toutes les fonctionnalités liées aux plats, ajoutez un nouveau dossier dans la partie "Queries" pour la nouvelle fonctionnalité : "GetPlatDetail".
 
-1)Commencez par créer le ViewModel qui contiendra les informations nécessaires pour la vue détaillée du plat.
+* Commencez par créer le ViewModel qui contiendra les informations nécessaires pour la vue détaillée du plat.
 
-2)Créez la Query de récupération avec l'identifiant du plat comme paramètre.
+* Créez la Query de récupération avec l'identifiant du plat comme paramètre.
 
-3)Implémentez le (Handler) qui exécutera la Query en utilisant le (repository) des plats.
+* Implémentez le (Handler) qui exécutera la Query en utilisant le (repository) des plats.
 
-4)Définissez le mapping (Meal<=>ViewModel) dans les profiles.
+* Définissez le mapping (Meal<=>ViewModel) dans les profiles.
 
-5)Dans le contrôleur "MealsController" de l'API, ajoutez la méthode GET qui enverra la Query à l'aide de MediatR et retournera le plat demandé.
+* Dans le contrôleur "MealsController" de l'API, ajoutez la méthode GET qui enverra la Query à l'aide de MediatR et retournera le plat demandé.
 
-6)N'oubliez pas de réaliser des tests unitaires pour vérifier le bon fonctionnement de la méthode que vous avez créée.
+* N'oubliez pas de réaliser des tests unitaires pour vérifier le bon fonctionnement de la méthode que vous avez créée.
 
 Il est également important de toujours documenter vos développements, en fournissant des commentaires clairs, des explications sur les fonctionnalités, ainsi que des exemples d'utilisation lorsque cela est pertinent.
 

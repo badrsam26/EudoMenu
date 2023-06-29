@@ -23,6 +23,8 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "EudoMenu.Persistence", "Eud
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EudoMenu.Api", "EudoMenu.Api\EudoMenu.Api.csproj", "{79F5B1BB-FAFB-47B7-B3F4-B839FB6CF69C}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EudoMenu.UnitTest", "EudoMenu.UnitTest\EudoMenu.UnitTest.csproj", "{B4375722-3FB4-40D6-BD50-EF96202787D3}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -45,6 +47,10 @@ Global
 		{79F5B1BB-FAFB-47B7-B3F4-B839FB6CF69C}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{79F5B1BB-FAFB-47B7-B3F4-B839FB6CF69C}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{79F5B1BB-FAFB-47B7-B3F4-B839FB6CF69C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B4375722-3FB4-40D6-BD50-EF96202787D3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B4375722-3FB4-40D6-BD50-EF96202787D3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B4375722-3FB4-40D6-BD50-EF96202787D3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B4375722-3FB4-40D6-BD50-EF96202787D3}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -58,6 +64,7 @@ Global
 		{A5C86E3B-CF97-4E48-BA30-65DCB0E7AD33} = {C4F3B0C3-80F8-4644-A21C-5640FC06CE79}
 		{47CA7EC3-3675-472E-AF4E-78FC1FBF7772} = {0DC59C7A-3860-49D6-8817-46DA4E5CE70B}
 		{79F5B1BB-FAFB-47B7-B3F4-B839FB6CF69C} = {CCE0EA0F-9321-4015-B25E-AA70931939BF}
+		{B4375722-3FB4-40D6-BD50-EF96202787D3} = {7942D939-4FF1-404B-B397-3561F2952292}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {31E15404-FE10-44CA-BE9F-18588A516C7F}
