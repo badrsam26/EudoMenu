@@ -10,6 +10,7 @@ namespace EudoMenu.Application.Contracts
     public  interface IAsyncRepository<T> where  T : class
     {
         Task<T> GetByIdAsync(Guid id);
+
         Task<IReadOnlyList<T>> GetAllAsync();
         Task<T> AddAsync(T item);
         Task<T> UpdateAsync(T item);
